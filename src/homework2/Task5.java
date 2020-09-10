@@ -9,13 +9,16 @@ public class Task5 {
         int d = scanner.nextInt();
         int f = scanner.nextInt();
         int min = 0;
-        if (s <= d & s <= f)
+        if (s <= d & s <= f) {
             min = s;
-        if (d <= s & d <= f)
+        }
+        if (d <= s & d <= f) {
             min = d;
-        if (f <= d & f <= s)
+        }
+        if (f <= d & f <= s) {
             min = f;
+        }
 
-            System.out.println(min);
+        System.out.println(min);
     }
 }
