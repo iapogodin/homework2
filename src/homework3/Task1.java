@@ -32,8 +32,8 @@ public class Task1 {
 
         public static void sendMessage(int... numbers) {
             System.out.print("Номера: ");
-            for (int i = 0; i < numbers.length; i++) {
-                System.out.print(numbers[i] + " ");
+            for (int value : numbers) {
+                System.out.print(value + " ");
             }
             System.out.println();
         }

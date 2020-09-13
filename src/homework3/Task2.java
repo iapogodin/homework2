@@ -87,10 +87,10 @@ public class Task2 {
     public static void main(String[] args) {
         Animal[] animals = {new Dog(), new Cat(), new Horse()};
         Veterinar veterinar = new Veterinar();
-        for (int i = 0; i < animals.length; i++) {
-            veterinar.treatAnimal(animals[i]);
-            animals[i].eat();
-            animals[i].makeNoise();
+        for (Animal animal : animals) {
+            veterinar.treatAnimal(animal);
+            animal.eat();
+            animal.makeNoise();
         }
 
     }

@@ -40,9 +40,9 @@ public class Task3 {
     public static void main(String[] args) {
         Student aspirant1 = new Aspirant("Gleb", "Golovanov", "1117", 5);
         Student[] students = {new Student("Ivan", "Ivanov", "111", 5), new Student("Kifir", "Kifirov", "112", 4.5), new Aspirant("Vitalic", "Kravchenko", "228", 2), aspirant1};
-        for (int i = 0; i < students.length; i++) {
-            students[i].getScholarship();
-            System.out.println(students[i].getScholarship());
+        for (Student student : students) {
+            student.getScholarship();
+            System.out.println(student.getScholarship());
         }
 
 
